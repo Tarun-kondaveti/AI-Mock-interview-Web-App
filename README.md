@@ -41,3 +41,7 @@ i used ui.shadcn.com for frontend components
 i used clerk for autentication 
 
 i used react web-cam for web cam 
+
+ git branch -M main
+>> git remote add origin https://github.com/Tarun-kondaveti/AI-Mock-interview-Web-App.git
+>> git push -u origin main
