@@ -33,7 +33,7 @@ const AddNewInterview = () => {
     setLoading(true);
     console.log("Job Details:", jobDesc, jobExperience, jobPosition);
 
-    // Define input prompt with clear instructions
+    
     const inputPrompt = "Job Position:"+jobPosition+", Job Description: "+ jobDesc+", Years of Experience: "+jobExperience+". Depends on this information Please provide"+process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT+" interview questions with answers in JSON format. Give question and answer field in JSON."
     try {
       const result = await chatSession.sendMessage(inputPrompt);
@@ -42,7 +42,7 @@ const AddNewInterview = () => {
         let content = result.response.candidates[0]?.content?.parts?.[0]?.text;
         // console.log("Extracted Content:", content);
 
-        // ✅ Clean and Parse JSON safely
+       
         const cleanContent = content.replace(/```json|```/g, "").trim(); // Remove markdown
         try {
           const parsedResponse = JSON.parse(cleanContent);
