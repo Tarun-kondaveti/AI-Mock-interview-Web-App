@@ -14,7 +14,8 @@ export default function Home() {
         </h1>
 
         
-        <p className="max-w-2xl text-lg md:text-xl text-gray-300">
+        <p className="max-w-2xl text-lg md:text-xl text-gray-300"> 
+          
           Step into our AI-powered mock interview room. Practice, get feedback, and build the confidence to land your dream job.
         </p>
 
